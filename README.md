@@ -81,7 +81,7 @@ Now that we have the ```api.py``` and the ```test.py``` we'll create the TravisC
 
 #### 8) Configuring TravisCI
 
-To configure TravisCI we need to create a file called ```.travis.yml``` and insert the following informations in it:
+To configure TravisCI we need to create a file called ```.travis.yml``` and insert the following information in it:
 
 ```yml
 language: python
@@ -104,13 +104,13 @@ Now that's everything's done with GitHub and TravisCI, we need to integrate it w
 - Set the Deployment Method as GitHub, syncing with our repository created above. 
 - Check the box where is written ```Wait for CI to pass before deploy```
 - Then click in Enable Automatic Deploys.
-- Create a new file called ```Procfile``` and insert the informations below in it:
+- Create a new file called ```Procfile``` and insert the information below in it:
 
 ```python
 web: FLASK_APP=api.py python -m flask run --host=0.0.0.0 --port=$PORT
 ```
 
-Now we've done! Make some changes in the project and commit it to check if the TravisCI and the Heroku is working well together!
+Now we've done! Make some changes in the project and commit it to check if the TravisCI and the Heroku are working well together!
 
 
 [github-doc]: https://help.github.com/articles/creating-a-new-repository/

@@ -103,7 +103,7 @@ Now that's everything's done with GitHub and TravisCI, we need to integrate it w
 - Create a new Heroku app
 - Set the Deployment Method as GitHub, syncing with our repository created above. 
 - Check the box where is written ```Wait for CI to pass before deploy```
-- Then click in Enable Automatic Deploys.
+- Then click on Enable Automatic Deploys.
 - Create a new file called ```Procfile``` and insert the information below in it:
 
 ```python

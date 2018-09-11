@@ -8,7 +8,7 @@ class TestApp(unittest.TestCase):
 
     def test_index(self):
         return_value = self.app.get('/')
-        assert b'Hi, Daniel' in return_value.data
+        assert b'Hi, Daniel!' in return_value.data
 
 if __name__ == '__main__':
     unittest.main()
